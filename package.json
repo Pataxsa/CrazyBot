@@ -28,8 +28,7 @@
         "url": "git+https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot.git"
     },
     "keywords": [
-        "bot",
-        "discord",
+        "discord-bot",
         "javascript",
         "docker",
         "dashboard"

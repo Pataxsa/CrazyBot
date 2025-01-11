@@ -1,26 +1,36 @@
-<div align="center">
-<a href="https://discord.gg/QKzRefhY4e"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" style="border-radius: 100px;" width="200"></a>
-<br>
-  <h1>CrazyBot</h1>
-  <h4>A multipurpose discord bot to help students.</h4>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/Pataxsa/CrazyBot"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" width="200" alt="CrazyBot"></a>
+  <br>
+  CrazyBot
+  <br>
+</h1>
 
-  <p>
-    <a href="#🏗️-build-with">Build with</a> •
-    <a href="#🚀-getting-started">Getting started</a> •
-    <a href="#💡-features">Features</a> •
-    <a href="#🛤️-roadmap">Roadmap</a> •
-    <a href="#📎-resources">Resources</a> •
-    <a href="#🤝-contributors">Contributors</a>
-  </p>
-</div>
+<p align="center">A multipurpose discord bot to help students.</p>
+
+<p align="center">
+  <a href="#%EF%B8%8F-build-with">Build with</a> •
+  <a href="#-getting-started">Getting started</a> •
+  <a href="#-features">Features</a> •
+  <a href="#%EF%B8%8F-roadmap">Roadmap</a> •
+  <a href="#-resources">Resources</a> •
+  <a href="#-contributors">Contributors</a>
+</p>
+
+[![Version][version-shield]][version-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
 # 🏗️ Build with
 
--   <a href="https://discord.js.org" target="_blank"><img src="https://img.shields.io/badge/discord.js-5765F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
--   <a href="https://www.prisma.io" target="_blank"><img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" /></a>
--   <a href="https://vite.dev" target="_blank"><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" /></a>
--   <a href="https://react.dev" target="_blank"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
--   <a href="https://tailwindcss.com" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /></a>
+-   [![Discord][Discord.js]][Discord-url]
+-   [![Prisma][Prisma.io]][Prisma-url]
+-   [![Vite][Vite.dev]][Vite-url]
+-   [![React][React.dev]][React-url]
+-   [![Tailwindcss][Tailwindcss.com]][Tailwindcss-url]
 
 # 🚀 Getting started
 
@@ -33,22 +43,22 @@
 
 -   ## ⚙️ Installation
 
-    1. First **clone** the project
+    -   First **clone** the project
 
         ```bash
         git clone https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot.git
         cd CrazyBot
         ```
 
-    2. Then **install** the dependencies required to run the project
+    -   Then **install** the dependencies required to run the project
 
         ```bash
         npm install
         ```
 
-    3. **Import** the sql file **[DB.sql](./DB.sql)** into your Postgres database
+    -   **Import** the sql file **[DB.sql](./DB.sql)** into your Postgres database
 
-    4. And finally **launch** the project with the command below ! (configure the `.env` file before !)
+    -   And finally **launch** the project with the command below ! (configure the `.env` file before !)
 
         ```bash
         npm start
@@ -145,6 +155,7 @@
 
 -   🌐 [Website](https://crazy-bot.xyz)
 -   🤖 [Bot](https://discord.com/oauth2/authorize?client_id=1288906275349987348)
+-   ✨ [Support](https://discord.gg/QKzRefhY4e)
 -   🐳 [Docker](https://hub.docker.com/r/cvjeticaxel122/crazybot)
 
 # 🤝 Contributors
@@ -152,3 +163,26 @@
 <a href="https://github.com/Pataxsa/CrazyBot/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Pataxsa/CrazyBot" alt="contrib.rocks image" />
 </a>
+
+[version-shield]: https://img.shields.io/github/package-json/v/Pataxsa/CrazyBot?style=for-the-badge
+[version-url]: https://github.com/Pataxsa/CrazyBot/releases/latest
+[contributors-shield]: https://img.shields.io/github/contributors/Pataxsa/CrazyBot.svg?style=for-the-badge
+[contributors-url]: https://github.com/Pataxsa/CrazyBot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Pataxsa/CrazyBot.svg?style=for-the-badge
+[forks-url]: https://github.com/Pataxsa/CrazyBot/network/members
+[stars-shield]: https://img.shields.io/github/stars/Pataxsa/CrazyBot.svg?style=for-the-badge
+[stars-url]: https://github.com/Pataxsa/CrazyBot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Pataxsa/CrazyBot.svg?style=for-the-badge
+[issues-url]: https://github.com/Pataxsa/CrazyBot/issues
+[license-shield]: https://img.shields.io/github/license/Pataxsa/CrazyBot.svg?style=for-the-badge
+[license-url]: https://github.com/Pataxsa/CrazyBot/blob/main/LICENSE.txt
+[Discord.js]: https://img.shields.io/badge/discord.js-5765F2?style=for-the-badge&logo=discord&logoColor=white
+[Discord-url]: https://discord.js.org/
+[Prisma.io]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
+[Prisma-url]: https://www.prisma.io/
+[Vite.dev]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vite.dev
+[React.dev]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://react.dev/
+[Tailwindcss.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwindcss-url]: https://tailwindcss.com
