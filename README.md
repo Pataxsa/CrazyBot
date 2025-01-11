@@ -9,12 +9,12 @@
 <p align="center">A multipurpose discord bot to help students.</p>
 
 <p align="center">
-  <a href="#🏗️-build-with">Build with</a> •
-  <a href="#🚀-getting-started">Getting started</a> •
-  <a href="#💡-features">Features</a> •
-  <a href="#🛤️-roadmap">Roadmap</a> •
-  <a href="#📎-resources">Resources</a> •
-  <a href="#🤝-contributors">Contributors</a>
+  <a href="#-build-with">Build with</a> •
+  <a href="#-getting-started">Getting started</a> •
+  <a href="#-features">Features</a> •
+  <a href="#-roadmap">Roadmap</a> •
+  <a href="#-resources">Resources</a> •
+  <a href="#-contributors">Contributors</a>
 </p>
 
 [![Version][version-shield]][version-url]
