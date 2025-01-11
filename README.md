@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Pataxsa/CrazyBot"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" style="border-radius: 100px;" width="200" alt="CrazyBot"></a>
+  <a href="https://github.com/Pataxsa/CrazyBot"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" width="200" alt="CrazyBot"></a>
   <br>
   CrazyBot
   <br>
@@ -17,10 +17,10 @@
   <a href="#🤝-contributors">Contributors</a>
 </p>
 
-[![Version][version-shield]](version-url)
+[![Version][version-shield]][version-url]
+[![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
-[![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
@@ -43,22 +43,22 @@
 
 -   ## ⚙️ Installation
 
-    1. First **clone** the project
+    -   First **clone** the project
 
         ```bash
         git clone https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot.git
         cd CrazyBot
         ```
 
-    2. Then **install** the dependencies required to run the project
+    -   Then **install** the dependencies required to run the project
 
         ```bash
         npm install
         ```
 
-    3. **Import** the sql file **[DB.sql](./DB.sql)** into your Postgres database
+    -   **Import** the sql file **[DB.sql](./DB.sql)** into your Postgres database
 
-    4. And finally **launch** the project with the command below ! (configure the `.env` file before !)
+    -   And finally **launch** the project with the command below ! (configure the `.env` file before !)
 
         ```bash
         npm start
@@ -153,10 +153,10 @@
 
 # 📎 Resources
 
--   🌐 [Website](website-url)
--   🤖 [Bot](bot-url)
--   ✨ [Support](support-url)
--   🐳 [Docker](docker-url)
+-   🌐 [Website](https://crazy-bot.xyz)
+-   🤖 [Bot](https://discord.com/oauth2/authorize?client_id=1288906275349987348)
+-   ✨ [Support](https://discord.gg/QKzRefhY4e)
+-   🐳 [Docker](https://hub.docker.com/r/cvjeticaxel122/crazybot)
 
 # 🤝 Contributors
 
@@ -164,12 +164,8 @@
   <img src="https://contrib.rocks/image?repo=Pataxsa/CrazyBot" alt="contrib.rocks image" />
 </a>
 
-[website-url]: https://crazy-bot.xyz
-[bot-url]: https://discord.com/oauth2/authorize?client_id=1288906275349987348
-[support-url]: https://discord.gg/QKzRefhY4e
-[docker-url]: https://hub.docker.com/r/cvjeticaxel122/crazybot
 [version-shield]: https://img.shields.io/github/package-json/v/Pataxsa/CrazyBot?style=for-the-badge
-[version-url]: https://github.com/Pataxsa/CrazyBot
+[version-url]: https://github.com/Pataxsa/CrazyBot/releases/latest
 [contributors-shield]: https://img.shields.io/github/contributors/Pataxsa/CrazyBot.svg?style=for-the-badge
 [contributors-url]: https://github.com/Pataxsa/CrazyBot/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/Pataxsa/CrazyBot.svg?style=for-the-badge
