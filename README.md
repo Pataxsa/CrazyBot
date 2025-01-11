@@ -1,18 +1,28 @@
-<div align="center">
-<a href="https://discord.gg/QKzRefhY4e"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" style="border-radius: 100px;" width="200"></a>
-<br>
-  <h1>CrazyBot</h1>
-  <h4>A multipurpose discord bot to help students.</h4>
+<h1 align="center">
+  <br>
+  <a href="https://github.com/Pataxsa/CrazyBot"><img src="https://cdn.discordapp.com/app-icons/1288906275349987348/1281ce7a67d52c81b57c5118e87eec6e.png" style="border-radius: 100px;" width="200" alt="CrazyBot"></a>
+  <br>
+  CrazyBot
+  <br>
+</h1>
 
-  <p>
-    <a href="#🏗️-build-with">Build with</a> •
-    <a href="#🚀-getting-started">Getting started</a> •
-    <a href="#💡-features">Features</a> •
-    <a href="#🛤️-roadmap">Roadmap</a> •
-    <a href="#📎-resources">Resources</a> •
-    <a href="#🤝-contributors">Contributors</a>
-  </p>
-</div>
+<p align="center">A multipurpose discord bot to help students.</p>
+
+<p align="center">
+  <a href="#🏗️-build-with">Build with</a> •
+  <a href="#🚀-getting-started">Getting started</a> •
+  <a href="#💡-features">Features</a> •
+  <a href="#🛤️-roadmap">Roadmap</a> •
+  <a href="#📎-resources">Resources</a> •
+  <a href="#🤝-contributors">Contributors</a>
+</p>
+
+[![Version][version-shield]](version-url)
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
 
 # 🏗️ Build with
 
@@ -143,12 +153,30 @@
 
 # 📎 Resources
 
--   🌐 [Website](https://crazy-bot.xyz)
--   🤖 [Bot](https://discord.com/oauth2/authorize?client_id=1288906275349987348)
--   🐳 [Docker](https://hub.docker.com/r/cvjeticaxel122/crazybot)
+-   🌐 [Website](website-url)
+-   🤖 [Bot](bot-url)
+-   ✨ [Support](support-url)
+-   🐳 [Docker](docker-url)
 
 # 🤝 Contributors
 
 <a href="https://github.com/Pataxsa/CrazyBot/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Pataxsa/CrazyBot" alt="contrib.rocks image" />
 </a>
+
+[website-url]: https://crazy-bot.xyz
+[bot-url]: https://discord.com/oauth2/authorize?client_id=1288906275349987348
+[support-url]: https://discord.gg/QKzRefhY4e
+[docker-url]: https://hub.docker.com/r/cvjeticaxel122/crazybot
+[version-shield]: https://img.shields.io/github/package-json/v/Pataxsa/CrazyBot?style=for-the-badge
+[version-url]: https://github.com/Pataxsa/CrazyBot
+[contributors-shield]: https://img.shields.io/github/contributors/Pataxsa/CrazyBot.svg?style=for-the-badge
+[contributors-url]: https://github.com/Pataxsa/CrazyBot/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/Pataxsa/CrazyBot.svg?style=for-the-badge
+[forks-url]: https://github.com/Pataxsa/CrazyBot/network/members
+[stars-shield]: https://img.shields.io/github/stars/Pataxsa/CrazyBot.svg?style=for-the-badge
+[stars-url]: https://github.com/Pataxsa/CrazyBot/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Pataxsa/CrazyBot.svg?style=for-the-badge
+[issues-url]: https://github.com/Pataxsa/CrazyBot/issues
+[license-shield]: https://img.shields.io/github/license/Pataxsa/CrazyBot.svg?style=for-the-badge
+[license-url]: https://github.com/Pataxsa/CrazyBot/blob/main/LICENSE.txt
