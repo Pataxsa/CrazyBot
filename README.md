@@ -26,11 +26,11 @@
 
 # 🏗️ Build with
 
--   <a href="https://discord.js.org" target="_blank"><img src="https://img.shields.io/badge/discord.js-5765F2?style=for-the-badge&logo=discord&logoColor=white" /></a>
--   <a href="https://www.prisma.io" target="_blank"><img src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" /></a>
--   <a href="https://vite.dev" target="_blank"><img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white" /></a>
--   <a href="https://react.dev" target="_blank"><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /></a>
--   <a href="https://tailwindcss.com" target="_blank"><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /></a>
+-   [![Discord][Discord.js]][Discord-url]
+-   [![Prisma][Prisma.io]][Prisma-url]
+-   [![Vite][Vite.dev]][Vite-url]
+-   [![React][React.dev]][React-url]
+-   [![Tailwindcss][Tailwindcss.com]][Tailwindcss-url]
 
 # 🚀 Getting started
 
@@ -176,3 +176,13 @@
 [issues-url]: https://github.com/Pataxsa/CrazyBot/issues
 [license-shield]: https://img.shields.io/github/license/Pataxsa/CrazyBot.svg?style=for-the-badge
 [license-url]: https://github.com/Pataxsa/CrazyBot/blob/main/LICENSE.txt
+[Discord.js]: https://img.shields.io/badge/discord.js-5765F2?style=for-the-badge&logo=discord&logoColor=white
+[Discord-url]: https://discord.js.org/
+[Prisma.io]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
+[Prisma-url]: https://www.prisma.io/
+[Vite.dev]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white
+[Vite-url]: https://vite.dev
+[React.dev]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://react.dev/
+[Tailwindcss.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwindcss-url]: https://tailwindcss.com
