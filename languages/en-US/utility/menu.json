@@ -1,0 +1,9 @@
+{
+    "NAME": "menu",
+    "DESCRIPTION": "Show menu of the day.",
+    "LOAD": "🔄 Obtaining the daily menu...",
+    "NOT_FOUND": "❌ No information found for the restaurant **{{resto}}**.",
+    "CLOSED": "❌ The structure **{{resto}}** is closed.",
+    "EMBED_TITLE": "🍽️ Menu for {{resto}}",
+    "EMBED_FOOTER": "Execution time: {{time}} ms"
+}

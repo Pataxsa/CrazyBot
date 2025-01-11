@@ -1,0 +1,10 @@
+{
+    "NAME": "wiki",
+    "DESCRIPTION": "Rechercher un article sur Wikipédia.",
+    "SHORT_LENGTH": "résumé court",
+    "MEDIUM_LENGTH": "résumé moyen",
+    "FULL_LENGTH": "résumé complet",
+    "NO_RESULTS": "Désolé, aucun article trouvé pour **{{term}}** sur Wikipédia.",
+    "ARTICLE": "article",
+    "SOURCE_FOOTER": "Source : Wikipédia"
+}

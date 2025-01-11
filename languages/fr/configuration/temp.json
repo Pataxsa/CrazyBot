@@ -1,0 +1,8 @@
+{
+    "NAME": "temp",
+    "DESCRIPTION": "Ajouter/supprimer un canal vocal temporaire.",
+    "ADD": "Le canal temporaire {{channel}} est maintenant ajouté !",
+    "REMOVE": "Le canal temporaire {{channel}} est maintenant supprimé !",
+    "LIST_TITLE": "🕔 Salons temporaires",
+    "NO_CHANNELS": "Il n'y a pas de salons temporaires."
+}

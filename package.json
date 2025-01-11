@@ -1,0 +1,95 @@
+{
+    "name": "crazybot",
+    "version": "1.2.0",
+    "description": "Un bot discord permettant de mieux gérer les groupes des étudiants existants",
+    "main": "main.js",
+    "type": "commonjs",
+    "private": "true",
+    "contributors": [
+        "Axel Cvjetic <axel.cvjetic@etudiant.univ-lr.fr> (https://github.com/Pataxsa)",
+        "Noam Chamouard <noam.chamouard@etudiant.univ-lr.fr>",
+        "Dimitri Ollivier <dimitri.ollivier@etudiant.univ-lr.fr>",
+        "Matteo Angoin <matteo.angoin@etudiant.univ-lr.fr>"
+    ],
+    "scripts": {
+        "start": "node .",
+        "dev": "node --watch .",
+        "build": "npm run build:client && npm run build:server",
+        "build:client": "cd dashboard && vite build --outDir dist/client",
+        "build:server": "cd dashboard && vite build --ssr src/entry-server.jsx --outDir dist/server",
+        "preview": "cd dashboard && cross-env NODE_ENV=production node app",
+        "check": "eslint .",
+        "fix": "eslint . --fix",
+        "prepare": "node .husky/install.mjs"
+    },
+    "homepage": "https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot.git"
+    },
+    "keywords": [
+        "bot",
+        "discord",
+        "javascript",
+        "docker",
+        "dashboard"
+    ],
+    "license": "MIT",
+    "lint-staged": {
+        "*.js": [
+            "eslint"
+        ]
+    },
+    "dependencies": {
+        "@headlessui/react": "^2.2.0",
+        "@phosphor-icons/react": "^2.1.7",
+        "@prisma/client": "^5.21.0",
+        "@vitalets/google-translate-api": "^9.2.0",
+        "chalk": "^4.1.2",
+        "compression": "^1.7.5",
+        "discord.js": "^14.16.3",
+        "dotenv": "^16.4.5",
+        "express": "^4.21.2",
+        "fast-xml-parser": "^4.5.0",
+        "i18next": "^23.16.4",
+        "i18next-fs-backend": "^2.3.2",
+        "module-alias": "^2.2.3",
+        "node-ical": "^0.20.1",
+        "ollama": "^0.5.11",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "react-router": "^7.1.1",
+        "redis": "^4.7.0",
+        "sirv": "^3.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.3.12",
+        "@types/react-dom": "^18.3.1",
+        "@vitejs/plugin-react-swc": "^3.7.1",
+        "autoprefixer": "^10.4.20",
+        "cross-env": "^7.0.3",
+        "eslint": "^9.13.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-jsdoc": "^50.4.3",
+        "eslint-plugin-prettier": "^5.2.1",
+        "husky": "^9.1.6",
+        "lint-staged": "^15.2.10",
+        "postcss": "^8.4.49",
+        "prettier": "3.3.3",
+        "prisma": "^5.21.0",
+        "tailwindcss": "^3.4.17",
+        "vite": "^6.0.1"
+    },
+    "engines": {
+        "node": "^20.17.0",
+        "npm": "^10.8.2"
+    },
+    "_moduleAliases": {
+        "@root": ".",
+        "@dashboard": "./dashboard/",
+        "@src": "./src/",
+        "@utils": "./src/utils/",
+        "@base": "./src/base/",
+        "@models": "./src/models/"
+    }
+}

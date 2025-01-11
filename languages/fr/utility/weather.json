@@ -1,0 +1,9 @@
+{
+    "NAME": "météo",
+    "DESCRIPTION": "Afficher la météo dans la ville sélectionnée.",
+    "CLOSE_BUTTON": "❌ Fermer",
+    "LOAD": "🔄 Obtentions des informations météorologiques...",
+    "NOT_FOUND": "❌ Il n'y a pas d'informations météorologiques dans la ville **{{city}}**.",
+    "EMBED_TITLE": "🌤️ Météo du jour pour {{city}}",
+    "EMBED": "🌡️ Température : {{temp}}°C\n💧 Humidité : {{humidity}}%\n💨 Vitesse du vent : {{windSpeed}} m/s\n☁️ Couverture nuageuse : {{cloudiness}}\n\n**Prévisions horaires :**\n{{hourlyForecast}}"
+}

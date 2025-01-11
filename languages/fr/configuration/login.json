@@ -1,0 +1,12 @@
+{
+    "NAME": "login",
+    "DESCRIPTION": "Associez votre identifiant à votre compte Discord.",
+    "SAME": "✅ Vous avez déjà associé le login **{{login}}** à votre compte.",
+    "UPDATED": "✅ Votre identifiant a été mis à jour en **{{login}}**.",
+    "NOT_UPDATED": "❌ Votre identifiant n'a pas été modifié.",
+    "EXPIRED": "⏳ Le temps de réponse est expiré, veuillez réessayer.",
+    "EMBED_SUCCESS_TITLE": "🎓 Inscription réussie",
+    "EMBED_SUCCESS_DESC": "Votre identifiant **{{login}}** a été associé avec succès à votre compte Discord.",
+    "EMBED_REGISTERED_TITLE": "⚠️ identifiant déjà inscrit !",
+    "EMBED_REGISTERED_DESC": "Vous avez déjà enregistré l'identifiant **{{login}}**. Voulez-vous le modifier ?"
+}

@@ -1,0 +1,5 @@
+{
+    "NAME": "support",
+    "DESCRIPTION": "Get the invitation link for support.",
+    "INVITE": "If you need support or help go here => **{{link}}**"
+}

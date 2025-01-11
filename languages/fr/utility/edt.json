@@ -1,0 +1,11 @@
+{
+    "NAME": "edt",
+    "DESCRIPTION": "Affiche les cours pour un étudiant donné.",
+    "LOADING": "🔄 Chargement...",
+    "NOT_FOUND": "❌ Login invalide.",
+    "LOGIN_NOTFOUND": "🔑 Vous devez fournir votre identifiant ENT. Utilisez </login:1321742831475359797> pour associer votre compte.",
+    "DENIED": "🔒 Accès refusé : l'agenda de {{login}} est privé. Pour le rendre public, rendez vous [ici](https://espelette.calypso.univ-lr.fr/mon-planning) et cochez public/devinable.",
+    "NO_COURSES": "😶 **{{login}}** n'a aucun cours cette semaine.",
+    "EMBED_TITLE": "📚 Cours pour **{{login}}** - {{date}}",
+    "EMBED": "📘 **{{subject}}**\n🕒 Heure : {{hour}}\n🏫 Salle : {{room}}\n📖 Type : {{type}}\n👨‍🏫 Professeur : {{teacher}}"
+}

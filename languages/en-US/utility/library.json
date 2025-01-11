@@ -1,0 +1,22 @@
+{
+    "NAME": "library",
+    "DESCRIPTION": "Search for a book in the university library and check its availability.",
+    "UNKNOWN_TITLE": "Unknown Title",
+    "UNKNOWN_AUTHOR": "Unknown Author",
+    "UNKNOWN_PUBLISHER": "Unknown Publisher",
+    "UNKNOWN_YEAR": "Unknown Year",
+    "NO_SUMMARY": "No summary available.",
+    "UNKNOWN_LOCATION": "Unknown Sub-location",
+    "UNKNOWN_CALL_NUMBER": "Unknown Call Number",
+    "NO_AVAILABILITY": "No availability information.",
+    "AUTHOR": "Author",
+    "PUBLISHER": "Publisher",
+    "YEAR": "Year",
+    "LOCATION": "Location",
+    "CALL_NUMBER": "Call Number",
+    "AVAILABILITY": "Availability",
+    "FOOTER": "Search performed via the library API.",
+    "NO_BOOKS_FOUND": "No books found for your query '{{query}}'.",
+    "SEARCH_ERROR": "An error occurred while searching the library catalog.",
+    "MISSING_MMS": "This book's MMS ID is missing, and its availability cannot be checked."
+}

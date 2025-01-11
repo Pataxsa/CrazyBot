@@ -1,0 +1,8 @@
+{
+    "NAME": "cinema",
+    "DESCRIPTION": "Affiche les séances de cinéma pour CGR Les Minimes et CGR Dragon.",
+    "LOAD": "🔄 Obtention des séances en cours ...",
+    "NOT_FOUND": "❌ Aucune séance trouvée pour le cinéma **CGR {{cinema}}**.",
+    "EMBED": "**⏳ Durée :** {{runtime}}\n\n**🎭 Genres :** {{genres}}\n\n**⭐ Note des utilisateurs :** {{userRating}} ({{userReviewCount}} avis)\n\n**🕒 Horaires :** {{schedules}}",
+    "NO_SHEDULES": "Pas de séance aujourd'hui"
+}

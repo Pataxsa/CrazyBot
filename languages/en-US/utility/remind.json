@@ -1,0 +1,14 @@
+{
+    "NAME": "remind",
+    "DESCRIPTION": "Send a remind for a event.",
+    "TOO_MANY": "💥 You have too many reminders ! (**{{reminders}}**)",
+    "TOO_SHORT": "🫠 Your duration is too short !",
+    "EXISTS": "❌ The reminder **{{name}}** already exists !",
+    "RECORDED": "🔔 Reminder recorded ! I will call back `{{message}}` <t:{{timestamp}}:R>.",
+    "NOT_FOUND": "❌ The reminder **{{name}}** doesn't exists.",
+    "REMOVED": "✅ The reminder **{{name}}** is now removed !",
+    "EMBED_TITLE": "⏰ Reminders",
+    "EMBED_DESC": "No reminds.",
+    "FIELD_EMBED": "message: `{{message}}`, {{channel}}time: <t:{{time}}:R>",
+    "CHANNEL": "channel"
+}

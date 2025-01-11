@@ -1,0 +1,6 @@
+{
+    "NAME": "ping",
+    "DESCRIPTION": "Check the bot ping.",
+    "LOAD": "🔄 Ping in progress...",
+    "REPLY": "🏓 Bot latency: `{{botLatency}}ms`\n📡 Api latency: `{{apiLatency}}ms`"
+}

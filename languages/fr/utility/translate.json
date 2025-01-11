@@ -1,0 +1,12 @@
+{
+    "NAME": "traduction",
+    "DESCRIPTION": "Traduit un message dans la langue spécifiée.",
+    "LOAD": "🔄 Traduction en cours...",
+    "UNAVAILABLE": "❌ La traduction n'est actuellement pas disponible.",
+    "TITLE": "🌍 Traduction",
+    "FIELD_1": "📝 Message Original",
+    "FIELD_2": "🌐 Langage Original",
+    "FIELD_3": "🎯 Langage de destination",
+    "FIELD_4": "🔁 Traduction",
+    "FOOTER": "Propulsé par Google Traduction"
+}

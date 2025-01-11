@@ -1,0 +1,7 @@
+{
+    "NAME": "gpt",
+    "DESCRIPTION": "Ask AI with your prompt.",
+    "LOAD": "🔄 Generating... (be patient it may take some time)",
+    "INVALID_FORMAT": "❌ The provided file is not an image.",
+    "UNAVAILABLE": "❌ AI is currently unavailable."
+}

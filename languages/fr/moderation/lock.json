@@ -1,0 +1,8 @@
+{
+    "NAME": "verrouillage",
+    "DESCRIPTION": "Verrouiller/déverrouiller un canal.",
+    "CHANNEL": "💬 Canal",
+    "REASON": "❓ Raison",
+    "LOCKED": "🔒 Fermé",
+    "UNLOCKED": "🔓 Débloqué"
+}

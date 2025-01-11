@@ -1,0 +1,9 @@
+{
+    "NAME": "weather",
+    "DESCRIPTION": "Show the weather in the selected city.",
+    "CLOSE_BUTTON": "❌ Close",
+    "LOAD": "🔄 Getting weather informations...",
+    "NOT_FOUND": "❌ There is no weather information in the city **{{city}}**.",
+    "EMBED_TITLE": "🌤️ Weather of the day for {{city}}",
+    "EMBED": "🌡️ Temperature : {{temp}}°C\n💧 Humidity : {{humidity}}%\n💨 Wind speed : {{windSpeed}} m/s\n☁️ Cloudiness : {{cloudiness}}\n\n**Hourly forecast :**\n{{hourlyForecast}}"
+}

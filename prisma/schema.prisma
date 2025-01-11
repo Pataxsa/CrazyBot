@@ -1,0 +1,20 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["prismaSchemaFolder"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("POSTGRESQL_DB")
+}
+
+model guilds {
+  id            String   @id @db.VarChar(19)
+  temp_channels String[] @db.VarChar(19)
+}
+
+model users {
+  id        String  @id @db.VarChar(19)
+  login     String? @db.VarChar(40)
+  reminders Json[]
+}

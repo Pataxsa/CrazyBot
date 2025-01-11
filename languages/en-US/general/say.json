@@ -1,0 +1,5 @@
+{
+    "NAME": "say",
+    "DESCRIPTION": "Write a message with the bot.",
+    "SUCCESS": "✅ The bot successfully write `{{message}}`"
+}

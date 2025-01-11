@@ -1,0 +1,18 @@
+{
+    "NAME": "pendu",
+    "DESCRIPTION": "Jouez au pendu avec vos amis.",
+    "GAME_TITLE": "🎮 Jeu du Pendu",
+    "FOOTER": "Devinez une lettre en répondant à ce message.",
+    "WORD_TO_GUESS": "Mot à deviner",
+    "GUESS_LETTERS": "Lettres devinées",
+    "NO_GUESSES": "Aucune",
+    "REMAINING_ATTEMPTS": "Tentatives restantes",
+    "YOU_WIN": "🎉 Vous avez gagné !",
+    "WIN_DESCRIPTION": "Félicitations ! Vous avez deviné l'expression **{{word}}**.",
+    "YOU_LOST": "💀 Vous avez perdu !",
+    "LOSS_DESCRIPTION": "L'expression était **{{word}}**.",
+    "TIME_UP": "⏰ Temps écoulé !",
+    "TIME_UP_DESCRIPTION": "L'expression était **{{word}}**.",
+    "INVALID_INPUT": "Les caractères spéciaux et les chiffres ne sont pas autorisés.",
+    "DUPLICATE_GUESS": "Vous avez déjà deviné cette lettre."
+}

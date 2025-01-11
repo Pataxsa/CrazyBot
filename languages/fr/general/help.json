@@ -1,0 +1,5 @@
+{
+    "NAME": "aide",
+    "DESCRIPTION": "Affiche la liste des commandes.",
+    "DISABLED": "🚧 ~~/{{NAME}}~~ (désactivé)"
+}

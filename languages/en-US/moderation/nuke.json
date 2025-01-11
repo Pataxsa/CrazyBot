@@ -1,0 +1,6 @@
+{
+    "NAME": "nuke",
+    "DESCRIPTION": "Clear the current channel.",
+    "NOT_SUPPORTED": "❌ This channel is not supported.",
+    "SUCCESS": "{{user}} nuked this channel !"
+}

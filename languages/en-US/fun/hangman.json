@@ -1,0 +1,18 @@
+{
+    "NAME": "hangman",
+    "DESCRIPTION": "Play hangman with your friends.",
+    "GAME_TITLE": "🎮 Hangman Game",
+    "FOOTER": "Guess a letter by replying to this message.",
+    "WORD_TO_GUESS": "Word to guess",
+    "GUESS_LETTERS": "Guessed letters",
+    "NO_GUESSES": "None",
+    "REMAINING_ATTEMPTS": "Remaining attempts",
+    "YOU_WIN": "🎉 You Win!",
+    "WIN_DESCRIPTION": "Congratulations! You guessed the expression **{{word}}**.",
+    "YOU_LOST": "💀 You Lost!",
+    "LOSS_DESCRIPTION": "The expression was **{{word}}**.",
+    "TIME_UP": "⏰ Time's Up!",
+    "TIME_UP_DESCRIPTION": "The expression was **{{word}}**.",
+    "INVALID_INPUT": "Special characters and numbers are not allowed.",
+    "DUPLICATE_GUESS": "You've already guessed this letter."
+}

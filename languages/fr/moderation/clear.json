@@ -1,0 +1,8 @@
+{
+    "NAME": "purge",
+    "DESCRIPTION": "Effacez plusieurs messages.",
+    "DELETION_one": "🔄 Essaie de supprimer **{{count}}** message...",
+    "DELETION_other": "🔄 Essaie de supprimer **{{count}}** messages...",
+    "SUCCESS_one": "✅ {{user}} a supprimé **{{count}}** message avec succès.",
+    "SUCCESS_other": "✅ {{user}} a supprimé **{{count}}** messages avec succès."
+}

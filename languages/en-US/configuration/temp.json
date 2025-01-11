@@ -1,0 +1,8 @@
+{
+    "NAME": "temp",
+    "DESCRIPTION": "Add/remove a temporary voice channel.",
+    "ADD": "The temp channel {{channel}} is now added !",
+    "REMOVE": "The temp channel {{channel}} is now deleted !",
+    "LIST_TITLE": "🕔 Temporary channels",
+    "NO_CHANNELS": "There are no temporary channels."
+}

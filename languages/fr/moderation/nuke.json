@@ -1,0 +1,6 @@
+{
+    "NAME": "nettoyer",
+    "DESCRIPTION": "Purge le canal actuel.",
+    "NOT_SUPPORTED": "❌ Ce salon n'est pas supporté.",
+    "SUCCESS": "{{user}} a purgé ce canal !"
+}

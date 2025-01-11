@@ -1,0 +1,10 @@
+{
+    "NAME": "ticket",
+    "DESCRIPTION": "Ouvre un ticket sur le serveur.",
+    "LOAD": "🔄 Création de votre ticket...",
+    "NO_REASON": "Pas de raison",
+    "FOOTER": "Système de tickets par CrazyBot",
+    "CLOSE_BUTTON": "Fermer le ticket",
+    "TICKET_MESSAGE": "{{user}} bienvenue sur votre ticket !\nDécrivez votre problème, un membre du staff vous répondra sous peu.",
+    "SUCCESS": "✅ Votre ticket a bien été créé dans le salon {{channel}} !"
+}
