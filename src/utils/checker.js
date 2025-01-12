@@ -1,12 +1,12 @@
 const fs = require("fs");
+const config = require("@root/config");
 
 class Checker {
     /**
      * Check if the config is valid
-     * @param {import("@root/config")} config
      * @returns {void}
      */
-    static checkConfig(config) {
+    static checkConfig() {
         if (!/^postgres(?:ql)?:\/\//.test(config.postgresql)) throw Error("Postgresql link is not valid");
         if (!/^rediss?:\/\//.test(config.rediscache)) throw Error("Redis link is not valid");
 

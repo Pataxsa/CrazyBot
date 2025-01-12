@@ -10,9 +10,9 @@ const { blue, cyan, red } = require("chalk");
 
 const client = new Bot();
 
-checkConfig(client.config);
-
 const init = async () => {
+    checkConfig(); // Verify config
+
     // ======================
     //      COMMANDS
     // ======================

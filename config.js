@@ -51,7 +51,7 @@ module.exports = {
     },
     support: {
         link: "https://discord.gg/QKzRefhY4e",
-        github: "https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot",
+        github: "https://github.com/0BL1V10N1/CrazyBot",
         logs: "1301173553730818089" // Id of the log channel (leave blank if you don't want this option)
     }
 };
