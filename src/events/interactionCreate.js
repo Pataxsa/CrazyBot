@@ -78,10 +78,13 @@ class InteractionCreate extends Event {
             console.log(
                 `${interaction.guild?.name || "DM"} | ${interaction.user.displayName} executed the command ${cmd.infos.name} (${new Date().toLocaleString([], { hour12: false })}).`
             );
-        } catch (error) {
+        } catch (err) {
             interaction.error("other:ERROR", null, { edit: interaction.replied, components: [] });
-            this.client.sendLog(`❌ Command error (${cmd.infos.name}): ${error}`, "error");
-            console.log(red(`❌ Command error (${cmd.infos.name}):`), error);
+            this.client.sendLog(
+                `❌ An error occured on the **${cmd.infos.name}** command. \`\`\`js\n${err.stack}\`\`\``,
+                "error"
+            );
+            console.log(red(`❌ Command error (${cmd.infos.name}):`), err);
         }
     }
 }

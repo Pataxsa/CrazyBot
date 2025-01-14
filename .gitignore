@@ -1,6 +1,5 @@
 node_modules/
 .vscode/
-dashboard/dist/
 
 .DS_Store
 .env

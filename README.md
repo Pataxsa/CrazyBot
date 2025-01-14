@@ -28,9 +28,6 @@
 
 -   [![Discord][Discord.js]][Discord-url]
 -   [![Prisma][Prisma.io]][Prisma-url]
--   [![Vite][Vite.dev]][Vite-url]
--   [![React][React.dev]][React-url]
--   [![Tailwindcss][Tailwindcss.com]][Tailwindcss-url]
 
 # 🚀 Getting started
 
@@ -87,10 +84,6 @@
           token: process.env.TOKEN,
           postgresql: process.env.POSTGRESQL_DB,
           rediscache: process.env.REDIS_CACHE,
-          ollama: {
-              host: "0.0.0.0:11434", // Ollama host
-              model: "llama3.2-vision:11b" // AI Model
-          },
           apis: {
               weather_api: process.env.WEATHER_API
           },
@@ -98,11 +91,6 @@
         ```
 
 # 💡 Features
-
--   ### 🌐 Website
-
-    -   A website linked to the bot
-    -   A website containing complete documentation
 
 -   ### 🎓 Student Management
 
@@ -122,7 +110,6 @@
     -   Translate instantly
     -   Search for an article via Wikipedia
     -   Create tickets on your server
-    -   Use generative AI thanks to a prompt
 
 -   ### 🎉 Fun
 

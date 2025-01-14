@@ -29,9 +29,9 @@ class Ready extends Event {
         client.initReminders();
 
         // Load Dashboard
-        if (client.config.dashboard.enabled) {
-            client.dashboard.load(client);
-        }
+        // if (client.config.dashboard.enabled) {
+        //     client.dashboard.load(client);
+        // }
 
         // Update bot presence
         let i = 0;

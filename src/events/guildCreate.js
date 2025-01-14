@@ -1,5 +1,5 @@
 const Event = require("@base/event");
-const { Events, Guild, EmbedBuilder, Colors } = require("discord.js");
+const { Events, Guild, EmbedBuilder, Colors, ChannelType, PermissionFlagsBits } = require("discord.js");
 
 class GuildCreate extends Event {
     constructor(client) {
@@ -20,7 +20,13 @@ class GuildCreate extends Event {
             this.client.languages.find((_, lang) => lang === guild.preferredLocale) ||
             this.client.languages.get(this.client.config.default_lang);
 
-        const channel = guild.systemChannel || (await guild.fetchOwner());
+        let channel = guild.channels.cache.find(
+            channel =>
+                channel.type === ChannelType.GuildText &&
+                channel.permissionsFor(this.client.user).has(PermissionFlagsBits.SendMessages)
+        );
+
+        if (!channel) channel = await guild.fetchOwner();
 
         const embed = new EmbedBuilder();
         embed.setTitle(translate("other:ADD_TITLE")).setDescription(translate("other:ADD_DESC")).setColor(Colors.Green);

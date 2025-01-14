@@ -54,7 +54,7 @@ const init = async () => {
 
 init();
 
-process.on("unhandledRejection", error => {
-    if (client.isReady()) client.sendLog(`❌ Unexpected error: ${error}`, "error");
-    console.log(red("❌ Unexpected error:"), error);
+process.on("unhandledRejection", err => {
+    if (client.isReady()) client.sendLog(`❌ An unexpected error occured. \`\`\`js\n${err.stack}\`\`\``, "error");
+    console.log(red("❌ Unexpected error:"), err);
 }); // Handle any errors

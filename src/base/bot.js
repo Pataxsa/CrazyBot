@@ -1,6 +1,5 @@
 const { Client, Collection, GatewayIntentBits, REST, Routes } = require("discord.js");
 const languages = require("@utils/i18n");
-const { Ollama } = require("ollama");
 const { green, red, yellow } = require("chalk");
 
 class Bot extends Client {
@@ -28,19 +27,15 @@ class Bot extends Client {
          * @type {{guilds: import("@models/guildModel"), users: import("@models/userModel")}}
          */
         this.db = null;
-        /**
-         * Dashboard
-         */
-        this.dashboard = require("@dashboard/app");
+        // /**
+        //  * Dashboard
+        //  */
+        // this.dashboard = require("@dashboard/app");
         /**
          * Commands list
          * @type {Collection<string, import("./command")>}
          */
         this.commands = new Collection();
-        /**
-         * AI module using Ollama
-         */
-        this.ai = new Ollama({ host: this.config.ollama.host });
     }
 
     /**
@@ -67,22 +62,22 @@ class Bot extends Client {
      * @returns {void}
      */
     loadEvent(eventPath, eventName) {
+        const handleEvent = (event, ...args) => {
+            event.execute(...args).catch(err => {
+                this.sendLog(
+                    `❌ An error occurred on the **${eventName}** event. \`\`\`js\n${err.stack}\`\`\``,
+                    "error"
+                );
+                console.log(red(`❌ Event error (${eventName}):`), err);
+            });
+        };
+
         try {
             const event = new (require(`.${eventPath}/${eventName}`))(this);
             console.log(green(`✅ Loaded the event ${yellow(eventName)}.`));
             event.once
-                ? this.once(event.eventName, (...args) =>
-                      event.execute(...args).catch(err => {
-                          if (this.isReady()) this.sendLog(`❌ Event error (${event.eventName}): ${err}`, "error");
-                          console.log(red(`❌ Event error (${event.eventName}):`), err);
-                      })
-                  )
-                : this.on(event.eventName, (...args) =>
-                      event.execute(...args).catch(err => {
-                          if (this.isReady()) this.sendLog(`❌ Event error (${event.eventName}): ${err}`, "error");
-                          console.log(red(`❌ Event error (${event.eventName}):`), err);
-                      })
-                  );
+                ? this.once(event.eventName, (...args) => handleEvent(event, ...args))
+                : this.on(event.eventName, (...args) => handleEvent(event, ...args));
             delete require.cache[require.resolve(`.${eventPath}/${eventName}`)]; // Delete require cache
         } catch (error) {
             console.log(red(`❌ An error occurred while loading the "${yellow(eventName)}" event:`), error);
