@@ -7,8 +7,8 @@
 	"private": "true",
 	"contributors": ["0BL1V10N (https://github.com/0BL1V10N1)"],
 	"scripts": {
-		"start": "npx tsx .",
-		"dev": "npx tsx --watch .",
+		"start": "tsx .",
+		"dev": "tsx --watch .",
 		"prepare": "node .husky/install.mjs"
 	},
 	"homepage": "https://github.com/0BL1V10N1/CrazyBot#readme",
