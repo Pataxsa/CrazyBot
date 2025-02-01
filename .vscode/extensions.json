@@ -1,5 +1,5 @@
 {
-	"recommendations": [
+    "recommendations": [
         "biomejs.biome", 
         "streetsidesoftware.code-spell-checker", 
         "ms-azuretools.vscode-docker"
