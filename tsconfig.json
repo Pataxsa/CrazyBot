@@ -1,0 +1,19 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"baseUrl": ".",
+		"strict": true,
+		"esModuleInterop": true,
+		"skipLibCheck": true,
+		"resolveJsonModule": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"paths": {
+			"@/*": ["*"]
+		}
+	},
+	"include": ["src/**/*.ts", "dashboard/**/*.ts"],
+	"exclude": ["node_modules"]
+}
