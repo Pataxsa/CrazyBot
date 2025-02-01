@@ -27,10 +27,7 @@
 # 🏗️ Build with
 
 -   [![Discord][Discord.js]][Discord-url]
--   [![Prisma][Prisma.io]][Prisma-url]
--   [![Vite][Vite.dev]][Vite-url]
--   [![React][React.dev]][React-url]
--   [![Tailwindcss][Tailwindcss.com]][Tailwindcss-url]
+-   [![Mongoose][Mongoose.com]][Mongoose-url]
 
 # 🚀 Getting started
 
@@ -46,7 +43,7 @@
     -   First **clone** the project
 
         ```bash
-        git clone https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot.git
+        git clone https://github.com/0BL1V10N1/CrazyBot.git
         cd CrazyBot
         ```
 
@@ -55,8 +52,6 @@
         ```bash
         npm install
         ```
-
-    -   **Import** the sql file **[DB.sql](./DB.sql)** into your Postgres database
 
     -   And finally **launch** the project with the command below ! (configure the `.env` file before !)
 
@@ -71,11 +66,10 @@
         ```bash
         # Bot token
         TOKEN=
-        # Postgresql link (example: postgresql://root:root@localhost/db)
-        # For Docker use "postgresql://root:root@bot-db/crazybot"
-        POSTGRESQL_DB=
-        # Redis server link (example: redis://default:default@127.0.0.1:6379)
-        REDIS_CACHE=
+        # Mongodb link (example: mongodb://root:root@localhost/crazybot)
+        MONGODB=
+        # Redis server link (example: redis://default:default@localhost)
+        REDIS=
         # OpenWeatherMap Api Key (link: https://openweathermap.org/api)
         WEATHER_API=
         ```
@@ -87,10 +81,6 @@
           token: process.env.TOKEN,
           postgresql: process.env.POSTGRESQL_DB,
           rediscache: process.env.REDIS_CACHE,
-          ollama: {
-              host: "0.0.0.0:11434", // Ollama host
-              model: "llama3.2-vision:11b" // AI Model
-          },
           apis: {
               weather_api: process.env.WEATHER_API
           },
@@ -98,11 +88,6 @@
         ```
 
 # 💡 Features
-
--   ### 🌐 Website
-
-    -   A website linked to the bot
-    -   A website containing complete documentation
 
 -   ### 🎓 Student Management
 
@@ -122,7 +107,6 @@
     -   Translate instantly
     -   Search for an article via Wikipedia
     -   Create tickets on your server
-    -   Use generative AI thanks to a prompt
 
 -   ### 🎉 Fun
 
@@ -175,14 +159,8 @@
 [issues-shield]: https://img.shields.io/github/issues/0BL1V10N1/CrazyBot.svg?style=for-the-badge
 [issues-url]: https://github.com/0BL1V10N1/CrazyBot/issues
 [license-shield]: https://img.shields.io/github/license/0BL1V10N1/CrazyBot.svg?style=for-the-badge
-[license-url]: https://github.com/0BL1V10N1/CrazyBot/blob/main/LICENSE.txt
+[license-url]: https://github.com/0BL1V10N1/CrazyBot/blob/main/LICENSE
 [Discord.js]: https://img.shields.io/badge/discord.js-5765F2?style=for-the-badge&logo=discord&logoColor=white
-[Discord-url]: https://discord.js.org/
-[Prisma.io]: https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white
-[Prisma-url]: https://www.prisma.io/
-[Vite.dev]: https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=Vite&logoColor=white
-[Vite-url]: https://vite.dev
-[React.dev]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://react.dev/
-[Tailwindcss.com]: https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white
-[Tailwindcss-url]: https://tailwindcss.com
+[Discord-url]: https://discord.js.org
+[Mongoose.com]: https://img.shields.io/badge/Mongoose-13aa52?style=for-the-badge&logo=Mongodb&logoColor=white
+[Mongoose-url]: https://mongoosejs.com

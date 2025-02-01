@@ -28,11 +28,6 @@ class Ready extends Event {
         // Initialize reminder system
         client.initReminders();
 
-        // Load Dashboard
-        if (client.config.dashboard.enabled) {
-            client.dashboard.load(client);
-        }
-
         // Update bot presence
         let i = 0;
         setInterval(() => {

@@ -10,8 +10,6 @@ README.md
 LICENSE.txt
 .gitignore
 *docker*
-.gitlab-ci.yml
-book.json
 *.sql
 *.config.js
 *.config.mjs

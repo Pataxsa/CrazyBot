@@ -27,11 +27,9 @@ class InteractionCreate extends Event {
         // Slash commands
         if (!interaction.isChatInputCommand()) return;
 
-        const data = {};
-
         const translate =
             this.client.languages.find((_, lang) => lang === interaction.locale) ||
-            this.client.languages.get(this.client.config.default_lang);
+            this.client.languages.get(this.client.config.language);
         interaction.translate = translate;
 
         const cmd = this.client.commands.get(interaction.commandName);
@@ -67,21 +65,18 @@ class InteractionCreate extends Event {
             return;
         }
 
-        // Find data in db
-        data.user = await this.client.db.users.findOrCreate(interaction.user.id);
-        if (interaction.guildId) {
-            data.guild = await this.client.db.guilds.findOrCreate(interaction.guildId);
-        }
-
         try {
-            await cmd.execute(interaction, cmd, data);
+            await cmd.execute(interaction, cmd);
             console.log(
                 `${interaction.guild?.name || "DM"} | ${interaction.user.displayName} executed the command ${cmd.infos.name} (${new Date().toLocaleString([], { hour12: false })}).`
             );
-        } catch (error) {
+        } catch (err) {
             interaction.error("other:ERROR", null, { edit: interaction.replied, components: [] });
-            this.client.sendLog(`❌ Command error (${cmd.infos.name}): ${error}`, "error");
-            console.log(red(`❌ Command error (${cmd.infos.name}):`), error);
+            this.client.sendLog(
+                `❌ An error occured on the **${cmd.infos.name}** command. \`\`\`js\n${err.stack}\`\`\``,
+                "error"
+            );
+            console.log(red(`❌ Command error (${cmd.infos.name}):`), err);
         }
     }
 }

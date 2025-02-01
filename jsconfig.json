@@ -5,11 +5,10 @@
         "baseUrl": ".",
         "paths": {
             "@root/*": ["./*"],
-            "@dashboard/*": ["./dashboard/*"],
             "@src/*": ["./src/*"],
             "@utils/*": ["./src/utils/*"],
             "@base/*": ["./src/base/*"],
-            "@models/*": ["./src/models/*"]
+            "@schemas/*": ["./src/schemas/*"]
         }
     },
     "exclude": ["node_modules"]

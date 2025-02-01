@@ -70,10 +70,9 @@ class Command {
      * Execute the command
      * @param {ChatInputCommandInteraction} interaction
      * @param {Command} cmd
-     * @param {{guild: {id: string, temp_channels: Array<string>}, user: {id: string, login: string, reminders: Array<*>}}} data
      * @returns {Promise<void>}
      */
-    async execute(interaction, cmd, data) {
+    async execute(interaction, cmd) {
         throw Error("Not implemented");
     }
 

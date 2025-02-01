@@ -1,21 +1,13 @@
-const { ActivityType, PresenceUpdateStatus, Colors } = require("discord.js");
+const { ActivityType, PresenceUpdateStatus, Colors, Locale } = require("discord.js");
 
 module.exports = {
     token: process.env.TOKEN,
-    postgresql: process.env.POSTGRESQL_DB,
-    rediscache: process.env.REDIS_CACHE,
-    ollama: {
-        host: "0.0.0.0:11434", // Ollama host
-        model: "llama3.2-vision:11b" // AI Model
-    },
+    mongodb: process.env.MONGODB,
+    redis: process.env.REDIS,
     apis: {
         weather_api: process.env.WEATHER_API
     },
-    dashboard: {
-        enabled: true,
-        port: 2748
-    },
-    default_lang: "en-US",
+    language: Locale.EnglishUS, // Default language used
     owners: ["992847036632268880", "391517248386236440", "775654147763601408", "548462018508881920"], // Owners id
     guilds: ["1164550021497241630"], // Guilds id for restricted commands
     presencestatus: {
@@ -51,7 +43,7 @@ module.exports = {
     },
     support: {
         link: "https://discord.gg/QKzRefhY4e",
-        github: "https://gitlab.univ-lr.fr/projets-l2-2024/les-crazy/CrazyBot",
-        logs: "1301173553730818089" // Id of the log channel (leave blank if you don't want this option)
+        github: "https://github.com/0BL1V10N1/CrazyBot",
+        logs: "" // Id of the log channel (leave blank if you don't want this option)
     }
 };

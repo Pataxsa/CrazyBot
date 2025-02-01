@@ -1,4 +1,5 @@
 const Event = require("@base/event");
+const { getGuild } = require("@schemas/Guild");
 const { Events, ChannelType, PermissionFlagsBits, Guild, VoiceState } = require("discord.js");
 
 const temp_channels = {};
@@ -37,7 +38,7 @@ class VoiceStateUpdate extends Event {
      */
     async #onJoin(newMember, channelId, guild) {
         const parent = newMember.channel?.parent;
-        const data = (await this.client.db.guilds.findOrCreate(guild.id)).temp_channels.some(id => id === channelId);
+        const data = (await getGuild(guild.id)).temp_channels.some(id => id === channelId);
 
         if (!data) return;
 

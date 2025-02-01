@@ -1,4 +1,5 @@
 const Command = require("@base/command");
+const { getUser } = require("@schemas/User");
 const {
     ChatInputCommandInteraction,
     EmbedBuilder,
@@ -32,12 +33,11 @@ class Login extends Command {
     /**
      * Execute the command
      * @param {ChatInputCommandInteraction} interaction
-     * @param {Command} _
-     * @param {{user: {id: string, login: string}}} data
      * @returns {Promise<void>}
      */
-    async execute(interaction, _, data) {
+    async execute(interaction) {
         const embedConfig = this.client.config.embed;
+        const userData = await getUser(interaction.user.id);
         const login = interaction.options.getString("login");
 
         const embed = new EmbedBuilder()
@@ -45,15 +45,15 @@ class Login extends Command {
             .setTitle(interaction.t("configuration/login:EMBED_SUCCESS_TITLE"))
             .setDescription(interaction.t("configuration/login:EMBED_SUCCESS_DESC", { login }));
 
-        if (!data.user.login) {
-            data.user.login = login;
-            await this.client.db.users.update(data.user.id, data.user);
+        if (!userData.login) {
+            userData.login = login;
+            await userData.save();
 
             interaction.reply({ embeds: [embed], ephemeral: true });
             return;
         }
 
-        if (data.user.login === login) {
+        if (userData.login === login) {
             interaction.success("configuration/login:SAME", { login }, { ephemeral: true });
             return;
         }
@@ -61,7 +61,7 @@ class Login extends Command {
         embed
             .setColor(embedConfig.color.error)
             .setTitle(interaction.t("configuration/login:EMBED_REGISTERED_TITLE"))
-            .setDescription(interaction.t("configuration/login:EMBED_REGISTERED_DESC", { login: data.user.login }));
+            .setDescription(interaction.t("configuration/login:EMBED_REGISTERED_DESC", { login: userData.login }));
 
         const yes_button = new ButtonBuilder().setCustomId("yes_button").setLabel("✅").setStyle(ButtonStyle.Secondary);
         const no_button = new ButtonBuilder().setCustomId("no_button").setLabel("❌").setStyle(ButtonStyle.Secondary);
@@ -87,8 +87,8 @@ class Login extends Command {
             await i.deferUpdate();
 
             if (i.customId === yes_button.data.custom_id) {
-                data.user.login = login;
-                await this.client.db.users.update(data.user.id, data.user);
+                userData.login = login;
+                await userData.save();
 
                 interaction.success("configuration/login:UPDATED", { login }, { edit: true, components: [] });
             }

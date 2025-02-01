@@ -10,9 +10,9 @@ const { blue, cyan, red } = require("chalk");
 
 const client = new Bot();
 
-checkConfig(client.config);
-
 const init = async () => {
+    checkConfig(); // Verify config
+
     // ======================
     //      COMMANDS
     // ======================
@@ -44,9 +44,7 @@ const init = async () => {
     // ======================
     //      DATABASE
     // ======================
-    const DB = new Database();
-    await DB.connect(); // Connection to database + redis server
-    client.db = DB.models; // Send all the models to the client
+    await Database.connect(); // Connection to database + redis server
 
     // Login the bot
     client.login(client.config.token);
@@ -54,7 +52,7 @@ const init = async () => {
 
 init();
 
-process.on("unhandledRejection", error => {
-    if (client.isReady()) client.sendLog(`❌ Unexpected error: ${error}`, "error");
-    console.log(red("❌ Unexpected error:"), error);
+process.on("unhandledRejection", err => {
+    if (client.isReady()) client.sendLog(`❌ An unexpected error occured. \`\`\`js\n${err.stack}\`\`\``, "error");
+    console.log(red("❌ Unexpected error:"), err);
 }); // Handle any errors

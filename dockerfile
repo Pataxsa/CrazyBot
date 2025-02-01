@@ -3,7 +3,7 @@ ARG ALPINE_VERSION=3.20
 
 FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION}
 
-LABEL maintainer="Axel Cvjetic"
+LABEL maintainer="0BL1V10N"
 
 RUN apk add --no-cache openssl \ 
     && apk update
