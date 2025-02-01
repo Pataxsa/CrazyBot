@@ -7,8 +7,8 @@ class Checker {
      * @returns {void}
      */
     static checkConfig() {
-        if (!/^postgres(?:ql)?:\/\//.test(config.postgresql)) throw Error("Postgresql link is not valid");
-        if (!/^rediss?:\/\//.test(config.rediscache)) throw Error("Redis link is not valid");
+        if (!/^mongodb(?:\+srv)?:\/\//.test(config.mongodb)) throw Error("Mongodb link is not valid");
+        if (!/^rediss?:\/\//.test(config.redis)) throw Error("Redis link is not valid");
 
         if (!config.token) throw Error("Bot token is not valid");
 

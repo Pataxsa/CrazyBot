@@ -44,9 +44,7 @@ const init = async () => {
     // ======================
     //      DATABASE
     // ======================
-    const DB = new Database();
-    await DB.connect(); // Connection to database + redis server
-    client.db = DB.models; // Send all the models to the client
+    await Database.connect(); // Connection to database + redis server
 
     // Login the bot
     client.login(client.config.token);

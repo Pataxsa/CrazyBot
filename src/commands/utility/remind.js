@@ -1,4 +1,5 @@
 const Command = require("@base/command");
+const { getUser } = require("@schemas/User");
 const { parseTime, Mention } = require("@utils/functions");
 const {
     ChatInputCommandInteraction,
@@ -70,23 +71,22 @@ class Remind extends Command {
     /**
      * Execute the command
      * @param {ChatInputCommandInteraction} interaction
-     * @param {Command} _
-     * @param {{user: {id: string, reminds: Array<*>}}} data
      * @returns {Promise<void>}
      */
-    async execute(interaction, _, data) {
+    async execute(interaction) {
+        const userData = await getUser(interaction.user.id);
         const command = interaction.options.getSubcommand();
         const name = interaction.options.getString("name");
 
         switch (command) {
             case "add":
-                this.#add(interaction, name, data.user);
+                this.#add(interaction, name, userData);
                 break;
             case "remove":
-                this.#remove(interaction, name, data.user);
+                this.#remove(interaction, name, userData);
                 break;
             default:
-                this.#list(interaction, data.user);
+                this.#list(interaction, userData);
         }
     }
 
@@ -122,7 +122,7 @@ class Remind extends Command {
         }
 
         userData.reminders.push({ name, message, channelId, inGuild, endTimestamp });
-        await this.client.db.users.update(userData.id, userData);
+        await userData.save();
 
         interaction.success(
             "utility/remind:RECORDED",
@@ -147,7 +147,7 @@ class Remind extends Command {
         }
 
         userData.reminders = userData.reminders.filter(remind => remind !== reminder);
-        await this.client.db.users.update(userData.id, userData);
+        await userData.save();
 
         interaction.success("utility/remind:REMOVED", { name }, { ephemeral: true });
     }

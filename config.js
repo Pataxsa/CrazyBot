@@ -2,16 +2,12 @@ const { ActivityType, PresenceUpdateStatus, Colors, Locale } = require("discord.
 
 module.exports = {
     token: process.env.TOKEN,
-    postgresql: process.env.POSTGRESQL_DB,
-    rediscache: process.env.REDIS_CACHE,
+    mongodb: process.env.MONGODB,
+    redis: process.env.REDIS,
     apis: {
         weather_api: process.env.WEATHER_API
     },
-    // dashboard: {
-    //     enabled: true,
-    //     port: 2748
-    // },
-    default_lang: Locale.EnglishUS,
+    language: Locale.EnglishUS, // Default language used
     owners: ["992847036632268880", "391517248386236440", "775654147763601408", "548462018508881920"], // Owners id
     guilds: ["1164550021497241630"], // Guilds id for restricted commands
     presencestatus: {

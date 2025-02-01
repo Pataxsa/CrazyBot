@@ -96,7 +96,7 @@ export default [
             "jsdoc/no-undefined-types": [
                 "error",
                 {
-                    definedTypes: ["NodeJS"]
+                    definedTypes: ["NodeJS", "AsyncGenerator"]
                 }
             ],
             "jsdoc/no-defaults": "off"

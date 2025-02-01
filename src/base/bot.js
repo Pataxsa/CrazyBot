@@ -1,5 +1,6 @@
 const { Client, Collection, GatewayIntentBits, REST, Routes } = require("discord.js");
 const languages = require("@utils/i18n");
+const { getAllUsers } = require("@schemas/User");
 const { green, red, yellow } = require("chalk");
 
 class Bot extends Client {
@@ -18,19 +19,8 @@ class Bot extends Client {
 
         this.config = require("@root/config");
         this.rest = new REST().setToken(this.config.token);
-        /**
-         * Language module
-         */
+
         this.languages = languages(this);
-        /**
-         * DB models using prisma and redis
-         * @type {{guilds: import("@models/guildModel"), users: import("@models/userModel")}}
-         */
-        this.db = null;
-        // /**
-        //  * Dashboard
-        //  */
-        // this.dashboard = require("@dashboard/app");
         /**
          * Commands list
          * @type {Collection<string, import("./command")>}
@@ -107,11 +97,19 @@ class Bot extends Client {
 
     /**
      * Initialize the reminder system
-     * @returns {void}
+     * @returns {Promise<void>}
      */
-    initReminders() {
+    async initReminders() {
+        let data = await getAllUsers({ reminders: { $ne: [] } }, { lean: false });
+
         setInterval(async () => {
-            const usersData = await this.db.users.readAll();
+            let next = await data.next();
+            if (next.done) {
+                data = await getAllUsers({ reminders: { $ne: [] } }, { lean: false });
+                next = await data.next();
+            }
+
+            const usersData = next.value;
 
             const updatePromises = usersData.map(async userData => {
                 const currentTimestamp = Date.now();
@@ -135,7 +133,7 @@ class Bot extends Client {
                 userData.reminders = userData.reminders.filter(reminder => currentTimestamp < reminder.endTimestamp);
 
                 await Promise.all(fetchPromises);
-                return this.db.users.update(userData.id, userData);
+                return userData.save();
             });
 
             await Promise.all(updatePromises);

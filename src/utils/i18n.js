@@ -46,7 +46,7 @@ const loadLanguages = dir => {
 /**
  * Language module
  * @param {import("@base/bot")} client
- * @returns {Collection<string, i18next.TFunction>}
+ * @returns {Collection<Locale, i18next.TFunction>}
  */
 module.exports = client => {
     const languages_path = join(__dirname, "../../languages");
@@ -60,7 +60,7 @@ module.exports = client => {
             jsonIdent: 2,
             loadPath: join(languages_path, "{{lng}}/{{ns}}.json")
         },
-        fallbackLng: client.config.default_lang,
+        fallbackLng: client.config.language,
         load: "all",
         interpolation: { escapeValue: false },
         ns: namespaces,

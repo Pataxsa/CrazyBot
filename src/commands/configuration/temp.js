@@ -1,5 +1,6 @@
 const Command = require("@base/command");
 const { Mention } = require("@utils/functions");
+const { getGuild } = require("@schemas/Guild");
 const {
     ChatInputCommandInteraction,
     InteractionContextType,
@@ -54,23 +55,22 @@ class Temp extends Command {
     /**
      * Execute the command
      * @param {ChatInputCommandInteraction} interaction
-     * @param {Command} _
-     * @param {{guild: {id: string, temp_channels: Array<string>}}} data
      * @returns {Promise<void>}
      */
-    async execute(interaction, _, data) {
+    async execute(interaction) {
         const action = interaction.options.getSubcommand();
         const temp_channel_id = interaction.options.getChannel("channel")?.id;
+        const guildData = await getGuild(interaction.guildId);
 
         switch (action) {
             case "add":
-                this.#add(interaction, temp_channel_id, data.guild);
+                this.#add(interaction, temp_channel_id, guildData);
                 break;
             case "remove":
-                this.#remove(interaction, temp_channel_id, data.guild);
+                this.#remove(interaction, temp_channel_id, guildData);
                 break;
             default:
-                this.#list(interaction, data.guild);
+                this.#list(interaction, guildData);
         }
     }
 
@@ -85,7 +85,7 @@ class Temp extends Command {
         if (!data.temp_channels.some(id => id === temp_channel_id)) {
             data.temp_channels.push(temp_channel_id);
 
-            await this.client.db.guilds.update(data.id, data);
+            await data.save();
         }
 
         interaction.success("configuration/temp:ADD", {
@@ -104,7 +104,7 @@ class Temp extends Command {
         if (data.temp_channels.some(id => id === temp_channel_id)) {
             data.temp_channels = data.temp_channels.filter(id => id !== temp_channel_id);
 
-            await this.client.db.guilds.update(data.id, data);
+            await data.save();
         }
 
         interaction.error("configuration/temp:REMOVE", {

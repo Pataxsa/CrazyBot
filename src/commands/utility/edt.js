@@ -1,5 +1,6 @@
 const Command = require("@base/command");
 const ical = require("node-ical");
+const { getUser } = require("@schemas/User");
 const { getStartOfWeek, getEndOfWeek } = require("@utils/functions");
 const {
     EmbedBuilder,
@@ -34,12 +35,10 @@ class Edt extends Command {
     /**
      * Execute the command
      * @param {ChatInputCommandInteraction} interaction
-     * @param {Command} _
-     * @param {{user: {id: string, login: string}}} db
      * @returns {Promise<void>}
      */
-    async execute(interaction, _, db) {
-        const login = interaction.options.getString("identifier") || db.user.login;
+    async execute(interaction) {
+        const login = interaction.options.getString("identifier") || (await getUser(interaction.user.id)).login;
         const currentDate = new Date().toLocaleDateString(interaction.locale);
 
         const data = { page: 0, login, courses: null };
