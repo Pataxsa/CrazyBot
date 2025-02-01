@@ -1,6 +1,0 @@
-{
-    "NAME": "ping",
-    "DESCRIPTION": "Vérifier le ping du bot.",
-    "LOAD": "🔄 Ping en cours...",
-    "REPLY": "🏓 Latence du bot: `{{botLatency}}ms`\n📡 Latence de l'API: `{{apiLatency}}ms`"
-}

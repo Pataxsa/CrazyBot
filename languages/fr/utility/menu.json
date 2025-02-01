@@ -1,9 +1,0 @@
-{
-    "NAME": "menu",
-    "DESCRIPTION": "Affiche le menu du jour.",
-    "LOAD": "🔄 Obtention du menu du jour ...",
-    "NOT_FOUND": "❌ Aucune information trouvée pour le restaurant **{{resto}}**.",
-    "CLOSED": "❌ La structure **{{resto}}** est fermée.",
-    "EMBED_TITLE": "🍽️ Menu pour {{resto}}",
-    "EMBED_FOOTER": "Temps d'exécution : {{time}} ms"
-}

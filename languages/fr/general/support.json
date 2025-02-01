@@ -1,5 +1,0 @@
-{
-    "NAME": "support",
-    "DESCRIPTION": "Obtenir le lien d'invitation pour l'assistance.",
-    "INVITE": "Si vous avez besoin de support ou d'aide, rendez-vous ici => **{{link}}**"
-}

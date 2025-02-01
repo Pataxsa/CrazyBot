@@ -1,8 +1,0 @@
-{
-    "NAME": "theater",
-    "DESCRIPTION": "Shows cinema screenings for CGR Les Minimes and CGR Dragon.",
-    "LOAD": "🔄 Obtaining current sessions ...",
-    "NOT_FOUND": "❌ No screenings found for the cinema **CGR {{cinema}}**.",
-    "EMBED": "**⏳ Duration :** {{runtime}}\n\n**🎭 Genres :** {{genres}}\n\n**⭐ User rating :** {{userRating}} ({{userReviewCount}} avis)\n\n**🕒 Schedules :** {{schedules}}",
-    "NO_SHEDULES": "No session today"
-}

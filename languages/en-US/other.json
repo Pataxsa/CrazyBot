@@ -1,8 +1,0 @@
-{
-    "ERROR": "⚠️ An unexpected error has occurred.",
-    "MISSING_PERM": "🚫 I need the following permissions to work: **{{permissions}}**",
-    "DISABLED": "🚫 This command is currently disabled.",
-    "COOLDOWN": "⏳ You have to wait **{{seconds}}s** to do this command.",
-    "ADD_TITLE": "👋 Hello",
-    "ADD_DESC": "Thank you for adding me to your server! I am here to assist you. Type </help:1324286268988985438> to get started."
-}

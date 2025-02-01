@@ -1,8 +1,0 @@
-{
-    "NAME": "clear",
-    "DESCRIPTION": "Clear some messages.",
-    "DELETION_one": "🔄 Trying to delete **{{count}}** message...",
-    "DELETION_other": "🔄 Trying to delete **{{count}}** messages...",
-    "SUCCESS_one": "✅ {{user}} successfully deleted **{{count}}** message.",
-    "SUCCESS_other": "✅ {{user}} successfully deleted **{{count}}** messages."
-}

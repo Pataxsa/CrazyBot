@@ -1,8 +1,0 @@
-{
-    "ERROR": "⚠️ Une erreur inattendue s'est produite.",
-    "MISSING_PERM": "🚫 J'ai besoin des permissions suivantes pour fonctionner: **{{permissions}}**",
-    "DISABLED": "🚫 Cette commande est actuellement désactivée.",
-    "COOLDOWN": "⏳ Tu dois attendre **{{seconds}}s** pour exécuter cette commande.",
-    "ADD_TITLE": "👋 Bonjour",
-    "ADD_DESC": "Merci de m'avoir ajouté à votre serveur ! Je suis ici pour vous assister. Tapez </help:1324286268988985438> pour débuter."
-}

@@ -1,6 +1,0 @@
-{
-    "NAME": "annonce",
-    "DESCRIPTION": "Envoyer une annonce.",
-    "SUCCESS": "✅ Le bot a envoyé avec succès l'annonce.",
-    "EMBED_FOOTER": "Annonce par {{user}}"
-}

@@ -1,0 +1,14 @@
+{
+    "files.exclude": {
+        "**/.vscode": true,
+        "**/node_modules": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "vs-code-prettier-eslint.prettierLast": false,
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "config.js": "prettier.config.js, eslint.config.mjs",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb, jsconfig.json"
+    }
+}

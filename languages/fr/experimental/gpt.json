@@ -1,7 +1,0 @@
-{
-    "NAME": "gpt",
-    "DESCRIPTION": "Parlez a l'IA avec votre prompt.",
-    "LOAD": "🔄 Génération en cours... (soyez patient, cela peut prendre un certain temps)",
-    "INVALID_FORMAT": "❌ Le fichier fourni n'est pas un image.",
-    "UNAVAILABLE": "❌ L'IA n'est actuellement pas disponible."
-}
