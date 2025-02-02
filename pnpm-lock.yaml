@@ -11,9 +11,6 @@ importers:
       discord.js:
         specifier: ^14.17.3
         version: 14.17.3
-      tsx:
-        specifier: ^4.19.2
-        version: 4.19.2
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -21,9 +18,9 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
-      pnpm:
-        specifier: ^9.15.4
-        version: 9.15.4
+      tsx:
+        specifier: ^4.19.2
+        version: 4.19.2
       typescript:
         specifier: ^5.7.3
         version: 5.7.3
@@ -314,11 +311,6 @@ packages:
   magic-bytes.js@1.10.0:
     resolution: {integrity: sha512-/k20Lg2q8LE5xiaaSkMXk4sfvI+9EGEykFS4b0CHHGWqDYU0bGUFSwchNOMA56D7TCs9GwVTkqe9als1/ns8UQ==}
 
-  pnpm@9.15.4:
-    resolution: {integrity: sha512-stwg4vxys+GISEWbNzWaMgZGY+VielHkx0ssKd2OjgSRSDw6u0B4nP1Xi/Ni+2uoJhsF8Dh9dnku1uI+o7G2oA==}
-    engines: {node: '>=18.12'}
-    hasBin: true
-
   resolve-pkg-maps@1.0.0:
     resolution: {integrity: sha512-seS2Tj26TBVOC2NIc2rOe2y2ZO7efxITtLZcGSOnHHNOQ7CkiUBfw0Iw2ck6xkIhPwLhKNLS8BO+hEpngQlqzw==}
 
@@ -595,8 +587,6 @@ snapshots:
   lodash@4.17.21: {}
 
   magic-bytes.js@1.10.0: {}
-
-  pnpm@9.15.4: {}
 
   resolve-pkg-maps@1.0.0: {}
 

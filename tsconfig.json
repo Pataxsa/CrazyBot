@@ -3,17 +3,21 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "node",
-		"baseUrl": ".",
+		"outDir": "./dist",
+		"rootDir": "./src",
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"resolveJsonModule": true,
+		"allowJs": false,
 		"forceConsistentCasingInFileNames": true,
-		"noEmit": true,
+		"sourceMap": false,
+		"declaration": false,
+		"noEmitOnError": true,
+		"baseUrl": ".",
 		"paths": {
 			"@/*": ["*"]
 		}
 	},
-	"include": ["src/**/*.ts", "dashboard/**/*.ts"],
-	"exclude": ["node_modules"]
+	"exclude": ["node_modules", "dist"]
 }

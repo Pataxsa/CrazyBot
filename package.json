@@ -2,13 +2,15 @@
 	"name": "crazybot",
 	"version": "1.3.0",
 	"description": "A multipurpose discord bot to help students.",
-	"main": "src/bot.ts",
+	"main": "dist/bot.js",
 	"type": "module",
 	"private": "true",
 	"contributors": ["0BL1V10N (https://github.com/0BL1V10N1)"],
 	"scripts": {
-		"start": "tsx .",
-		"dev": "tsx --watch .",
+		"start": "npm run build && npm run start:bot",
+		"start:bot": "node .",
+		"dev": "tsx --watch src/bot.ts",
+		"build": "tsc --project tsconfig.json",
 		"prepare": "node .husky/install.mjs"
 	},
 	"homepage": "https://github.com/0BL1V10N1/CrazyBot#readme",
@@ -19,13 +21,12 @@
 	"keywords": ["discord-bot", "typescript", "docker"],
 	"license": "MIT",
 	"dependencies": {
-		"discord.js": "^14.17.3",
-		"tsx": "^4.19.2"
+		"discord.js": "^14.17.3"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
 		"husky": "^9.1.7",
-		"pnpm": "^9.15.4",
+		"tsx": "^4.19.2",
 		"typescript": "^5.7.3"
 	},
 	"engines": {
