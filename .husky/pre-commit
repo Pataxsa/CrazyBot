@@ -1,1 +1,1 @@
-npx biome check --staged --no-errors-on-unmatched --colors=off
+npm run check --staged --no-errors-on-unmatched --colors=off

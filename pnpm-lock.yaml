@@ -11,6 +11,9 @@ importers:
       discord.js:
         specifier: ^14.17.3
         version: 14.17.3
+      tsx:
+        specifier: ^4.19.2
+        version: 4.19.2
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -21,9 +24,6 @@ importers:
       husky:
         specifier: ^9.1.7
         version: 9.1.7
-      tsx:
-        specifier: ^4.19.2
-        version: 4.19.2
       typescript:
         specifier: ^5.7.3
         version: 5.7.3

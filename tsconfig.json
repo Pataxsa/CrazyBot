@@ -1,19 +1,15 @@
 {
 	"compilerOptions": {
 		"target": "ESNext",
-		"module": "ESNext",
-		"moduleResolution": "node",
-		"outDir": "./dist",
-		"rootDir": "./src",
+		"module": "NodeNext",
+		"jsx": "react-jsx",
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"resolveJsonModule": true,
 		"allowJs": false,
 		"forceConsistentCasingInFileNames": true,
-		"sourceMap": false,
-		"declaration": false,
-		"noEmitOnError": true,
+		"noEmit": true,
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["*"]
